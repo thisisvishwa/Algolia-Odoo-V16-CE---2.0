@@ -1,0 +1,42 @@
+<odoo>
+    <template id="algolia_search_results_page_template" name="Algolia Search Results Page">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="algolia_results_container">
+                                <!-- Search Results will be dynamically injected here by AlgoliaSearch JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="algolia_search_result_item" inherit_id="algolia_search_results_page_template">
+        <xpath expr="//div[@id='algolia_results_container']" position="inside">
+            <div t-foreach="search_results" t-as="result" class="algolia-result-item">
+                <div class="media">
+                    <div class="media-left">
+                        <a t-att-href="result['url']">
+                            <img t-att-src="result['image']" class="media-object" style="width: 60px; height: 60px;"/>
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a t-att-href="result['url']" t-esc="result['name']"/>
+                        </h4>
+                        <div>
+                            <t t-esc="result['price']"/>
+                        </div>
+                        <div t-if="result['description']">
+                            <t t-esc="result['description']"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,25 @@
+<template id="algolia_facet_filter_template" inherit_id="website_sale.products_searchbar" primary="True">
+    <xpath expr="//div[@id='search_input']" position="after">
+        <div class="algolia-facet-filter" id="algolia_facet_filter">
+            <t t-foreach="request.env['product.attribute'].search([])" t-as="attribute">
+                <div class="facet" t-att-data-attribute-id="attribute.id">
+                    <span class="facet-title" t-esc="attribute.name"/>
+                    <div class="facet-values">
+                        <t t-foreach="attribute.value_ids" t-as="value">
+                            <div class="facet-value">
+                                <input type="checkbox" t-att-id="'facet_value_' + str(value.id)" t-att-value="value.id" class="facet-value-checkbox"/>
+                                <label t-att-for="'facet_value_' + str(value.id)" t-esc="value.name"/>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </xpath>
+</template>
+
+<template id="algolia_facet_filter_js">
+    <xpath expr="//div[@id='wrap']" position="inside">
+        <script type="text/javascript" src="/static/src/js/algolia_facet_filter.js"></script>
+    </xpath>
+</template>

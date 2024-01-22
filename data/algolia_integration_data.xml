@@ -1,0 +1,33 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Algolia Integration Configuration Parameters -->
+        <record id="algolia_integration_settings" model="ir.config_parameter">
+            <field name="key">algolia_integration.api_key</field>
+            <field name="value">your-algolia-api-key</field>
+        </record>
+        <record id="algolia_integration_application_id" model="ir.config_parameter">
+            <field name="key">algolia_integration.application_id</field>
+            <field name="value">your-algolia-application-id</field>
+        </record>
+        <record id="algolia_integration_index_name" model="ir.config_parameter">
+            <field name="key">algolia_integration.index_name</field>
+            <field name="value">odoo_ecommerce_products</field>
+        </record>
+        <record id="algolia_integration_search_only_key" model="ir.config_parameter">
+            <field name="key">algolia_integration.search_only_key</field>
+            <field name="value">your-algolia-search-only-key</field>
+        </record>
+        <record id="algolia_integration_typo_tolerance" model="ir.config_parameter">
+            <field name="key">algolia_integration.typo_tolerance</field>
+            <field name="value">true</field>
+        </record>
+        <record id="algolia_integration_search_delay" model="ir.config_parameter">
+            <field name="key">algolia_integration.search_delay</field>
+            <field name="value">500</field>
+        </record>
+        <record id="algolia_integration_faceting_attributes" model="ir.config_parameter">
+            <field name="key">algolia_integration.faceting_attributes</field>
+            <field name="value">["category", "price"]</field>
+        </record>
+    </data>
+</odoo>
