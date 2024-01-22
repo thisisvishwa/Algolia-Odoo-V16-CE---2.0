@@ -1,0 +1,122 @@
+/* Algolia Search Styles */
+
+/* Search Input */
+#algolia_search_input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Search Results Container */
+#algolia_results_container {
+  margin-top: 20px;
+}
+
+/* Facet Filter Styles */
+#algolia_facet_filter {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.algolia-facet-item {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.algolia-facet-item:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .algolia_responsive_design {
+    padding: 10px;
+  }
+}
+
+/* Loading Indicator */
+.algolia-search-loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Message */
+.algolia-search-error {
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+/* Facet and Filter UI */
+.algolia-facet-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.algolia-filter-checkbox {
+  margin-right: 5px;
+}
+
+/* Visually Appealing Results */
+.algolia-result-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.algolia-result-item:last-child {
+  border-bottom: none;
+}
+
+.algolia-result-image {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+  float: left;
+}
+
+.algolia-result-details {
+  overflow: hidden;
+}
+
+.algolia-result-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.algolia-result-price {
+  font-size: 16px;
+  color: #2ecc71;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Algolia Logo */
+.algolia-logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.algolia-logo {
+  width: 150px;
+  height: auto;
+  background: url('../img/algolia_logo.png') no-repeat center center;
+  background-size: contain;
+}

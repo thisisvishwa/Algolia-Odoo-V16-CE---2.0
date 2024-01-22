@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Version 16 Community Edition\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-01 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Odoo 16.0\n"
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_api_key:0
+msgid "Algolia API Key"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_index_name:0
+msgid "Algolia Index Name"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.product_data_schema:0
+msgid "Product Data Schema"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.search_controller:0
+msgid "Search Controller"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_backend_config_form:0
+msgid "Algolia Backend Configuration Form"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_search_input:0
+msgid "Algolia Search Input"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_facet_filter:0
+msgid "Algolia Facet Filter"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_results_container:0
+msgid "Algolia Results Container"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_responsive_design:0
+msgid "Algolia Responsive Design"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_integration_security:0
+msgid "Algolia Integration Security"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_integration_data:0
+msgid "Algolia Integration Data"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_search_js:0
+msgid "Algolia Search JavaScript"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_facet_filter_js:0
+msgid "Algolia Facet Filter JavaScript"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_styles_css:0
+msgid "Algolia Styles CSS"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.algolia_logo_png:0
+msgid "Algolia Logo"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.test_algolia_integration:0
+msgid "Test Algolia Integration"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.readme_md:0
+msgid "README"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.user_guide_md:0
+msgid "User Guide"
+msgstr ""
+
+#. module: algolia_integration
+#: model:algolia_integration,field:algolia_integration.technical_documentation_md:0
+msgid "Technical Documentation"
+msgstr ""

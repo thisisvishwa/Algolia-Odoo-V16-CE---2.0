@@ -1,0 +1,36 @@
+<template id="algolia_search_template" inherit_id="website.layout">
+    <xpath expr="//header" position="inside">
+        <div id="algolia_search_input_container" class="algolia-search-container">
+            <input type="text" id="algolia_search_input" class="form-control algolia-search-input" placeholder="Search for products..." />
+            <div id="algolia_search_autocomplete_dropdown" class="algolia-autocomplete-dropdown"></div>
+        </div>
+    </xpath>
+</template>
+
+<template id="algolia_search_autocomplete_item" inherit_id="website.sale_products_searchbar_autocomplete">
+    <xpath expr="//t[@t-foreach='products']" position="attributes">
+        <attribute name="t-foreach">algolia_products</attribute>
+    </xpath>
+    <xpath expr="//t[@t-as='product']" position="attributes">
+        <attribute name="t-as">algolia_product</attribute>
+    </xpath>
+    <xpath expr="//a" position="attributes">
+        <attribute name="t-att-href">'/shop/product/' + algolia_product.objectID</attribute>
+    </xpath>
+    <xpath expr="//img" position="attributes">
+        <attribute name="t-att-src">algolia_product.image</attribute>
+        <attribute name="t-att-alt">algolia_product.name</attribute>
+    </xpath>
+    <xpath expr="//div[@class='name']" position="replace">
+        <div class="name" t-esc="algolia_product.name"></div>
+    </xpath>
+    <xpath expr="//div[@class='price']" position="replace">
+        <div class="price" t-esc="algolia_product.price"></div>
+    </xpath>
+</template>
+
+<template id="algolia_no_result_template">
+    <div class="algolia-no-result">
+        <p>No products found matching your search.</p>
+    </div>
+</template>

@@ -1,0 +1,58 @@
+<template id="algolia_mobile_responsive_template" inherit_id="website.layout">
+    <xpath expr="//head" position="inside">
+        <link rel="stylesheet" type="text/css" href="/static/src/css/algolia_styles.css"/>
+    </xpath>
+    <xpath expr="//body" position="inside">
+        <script type="text/javascript" src="/static/src/js/algolia_search.js"></script>
+        <script type="text/javascript" src="/static/src/js/algolia_facet_filter.js"></script>
+    </xpath>
+    <xpath expr="//div[@id='wrapwrap']" position="inside">
+        <!-- Mobile responsive search bar -->
+        <div id="algolia_search_input_mobile" class="algolia-responsive-search-bar">
+            <input type="text" id="algolia_search_input" class="form-control" placeholder="Search for products..." />
+            <button type="submit" class="btn btn-primary algolia-search-button">Search</button>
+        </div>
+
+        <!-- Mobile responsive facet filters -->
+        <div id="algolia_facet_filter_mobile" class="algolia-responsive-facet-filter">
+            <div class="algolia-facet-title">Filter by:</div>
+            <div class="algolia-facet-list">
+                <!-- Facet filters will be dynamically inserted here by AlgoliaFacetFilter JS -->
+            </div>
+        </div>
+
+        <!-- Mobile responsive search results container -->
+        <div id="algolia_results_container_mobile" class="algolia-responsive-results-container">
+            <!-- Search results will be dynamically inserted here by AlgoliaSearch JS -->
+        </div>
+    </xpath>
+</template>
+
+<template id="algolia_mobile_responsive_css">
+    <xpath expr="//head" position="inside">
+        <style>
+            @media only screen and (max-width: 768px) {
+                .algolia-responsive-search-bar,
+                .algolia-responsive-facet-filter,
+                .algolia-responsive-results-container {
+                    margin: 0 auto;
+                    width: 90%;
+                    padding: 10px;
+                }
+                .algolia-search-button {
+                    width: 100%;
+                    margin-top: 5px;
+                }
+                .algolia-facet-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                .algolia-facet-list .algolia-facet {
+                    flex-basis: 48%;
+                    margin-bottom: 10px;
+                }
+            }
+        </style>
+    </xpath>
+</template>
